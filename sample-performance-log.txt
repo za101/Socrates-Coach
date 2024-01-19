@@ -1,0 +1,774 @@
+2023-09-26T20:59:45.114587448Z    _____                               
+2023-09-26T20:59:45.114637348Z   /  _  \ __________ _________   ____  
+2023-09-26T20:59:45.114643348Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2023-09-26T20:59:45.114647448Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2023-09-26T20:59:45.114651048Z \____|__  /_____ \____/ |__|    \___  >
+2023-09-26T20:59:45.114654748Z         \/      \/                  \/ 
+2023-09-26T20:59:45.114658348Z A P P   S E R V I C E   O N   L I N U X
+2023-09-26T20:59:45.114661748Z 
+2023-09-26T20:59:45.114664948Z Documentation: http://aka.ms/webapp-linux
+2023-09-26T20:59:45.114668248Z Python 3.11.4
+2023-09-26T20:59:45.114671648Z Note: Any data outside '/home' is not persisted
+2023-09-26T20:59:45.962793404Z Starting OpenBSD Secure Shell server: sshd.
+2023-09-26T20:59:45.990830952Z App Command Line not configured, will attempt auto-detect
+2023-09-26T20:59:46.061238873Z Starting periodic command scheduler: cron.
+2023-09-26T20:59:46.061488974Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite
+2023-09-26T20:59:46.070737390Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2023-09-26T20:59:46.072869793Z Build Operation ID: 3324145710fc2da3
+2023-09-26T20:59:46.073930695Z Oryx Version: 0.2.20230707.1, Commit: 0bd28e69919b5e8beba451e8677e3345f0be8361, ReleaseTagName: 20230707.1
+2023-09-26T20:59:46.074224296Z Output is compressed. Extracting it...
+2023-09-26T20:59:46.102368344Z Extracting '/home/site/wwwroot/output.tar.gz' to directory '/tmp/8dbbed320a0883d'...
+2023-09-26T20:59:56.906534663Z App path is set to '/tmp/8dbbed320a0883d'
+2023-09-26T20:59:56.946191804Z Detected an app based on Flask
+2023-09-26T20:59:56.946360104Z Generating `gunicorn` command for 'app:app'
+2023-09-26T20:59:57.011275571Z Writing output script to '/opt/startup/startup.sh'
+2023-09-26T20:59:57.069752831Z Using packages from virtual environment antenv located at /tmp/8dbbed320a0883d/antenv.
+2023-09-26T20:59:57.069794731Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages'
+2023-09-26T20:59:57.990427879Z [2023-09-26 20:59:57 +0000] [76] [INFO] Starting gunicorn 21.2.0
+2023-09-26T20:59:58.010013699Z [2023-09-26 20:59:58 +0000] [76] [INFO] Listening at: http://0.0.0.0:8000 (76)
+2023-09-26T20:59:58.010045199Z [2023-09-26 20:59:58 +0000] [76] [INFO] Using worker: sync
+2023-09-26T20:59:58.014397604Z [2023-09-26 20:59:58 +0000] [79] [INFO] Booting worker with pid: 79
+2023-09-26T21:00:11.992732019Z ===============KVUri:: https://rhnonprodkv.vault.azure.net
+2023-09-26T21:00:11.992767719Z ======getLogger('sqlalchemy'): <Logger sqlalchemy (ERROR)>
+2023-09-26T21:00:11.992773319Z ======test for print output
+2023-09-26T21:00:11.992791519Z ======test for print(flush=True) output
+2023-09-26T21:00:12.580493801Z ===db: <SQLAlchemy> ruanonprodrhsqlserver.database.windows.net AdventureWorks2019
+2023-09-26T21:00:12.580541301Z 
+2023-09-26T21:00:12.580547701Z 
+2023-09-26T21:00:12.580551601Z ----------- Connection successful !
+2023-09-26T21:00:15.118183217Z ===/accept_disclaimer:user: id: 1, username: aarondev, hash: pbkdf2:sha256:600000$ty2pfX9tShEHKPE7$6d69c5a781b51c52f1e88176ffe39c617a1d35f5247b3f2d0a0a1369a74924db
+2023-09-26T21:00:15.118233017Z ===/accept_disclaimer:success: aarondev, True
+2023-09-26T21:00:15.367746464Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:00:19.886530565Z ===/get_transcript_by_id: 2032f93f-c773-41d1-970e-347b5ad314a1
+2023-09-26T21:00:20.763048536Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:00:26.013020027Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:00:31.377508961Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:00:33.710408988Z ===/get_transcript_by_id: c99d3932-0736-48db-99b6-c24117296b5f
+2023-09-26T21:00:36.669014691Z ======/ Socrates home page is rendered.
+2023-09-26T21:00:37.258228906Z ===/send_input:usage_fraction: 2023-09-26 21:00:37.233846 Azure::rhgpt4 0.2517 aarondev c99d3932-0736-48db-99b6-c24117296b5f For example, it uses the least parts in car, its vision system is cost much less on auto driving
+
+2023-09-26T21:00:37.741733011Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:00:37.741773211Z =======module==AZ_KV_Uri in socratic_dialogue: https://rhnonprodkv.vault.azure.net
+2023-09-26T21:00:37.741779911Z =======module==az.openai.api_base: https://rhuseast2.openai.azure.com/
+2023-09-26T21:00:37.741784111Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:00:37.741788111Z ===--------API start time: 2023-09-26 21:00:37.741473, Azure, rhgpt4
+2023-09-26T21:00:37.741792111Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:00:41.831683085Z ===------Assessor: API end time and response time(seconds): 4.089293956756592 endTimestamp:2023-09-26 21:00:41.830767 usage:{
+2023-09-26T21:00:41.831719985Z   "completion_tokens": 90,
+2023-09-26T21:00:41.831727185Z   "prompt_tokens": 269,
+2023-09-26T21:00:41.831731385Z   "total_tokens": 359
+2023-09-26T21:00:41.831735285Z }
+2023-09-26T21:00:41.831739185Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:00:41.831743485Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:00:41.831747685Z ===--------API start time: 2023-09-26 21:00:41.831376, Azure, rhgpt4
+2023-09-26T21:00:41.831752085Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:00:44.126593177Z ===------Therapist: API end time and response time(seconds): 2.2948458194732666 endTimestamp:2023-09-26 21:00:44.126222 usage:{
+2023-09-26T21:00:44.126656177Z   "completion_tokens": 44,
+2023-09-26T21:00:44.126662877Z   "prompt_tokens": 374,
+2023-09-26T21:00:44.126666877Z   "total_tokens": 418
+2023-09-26T21:00:44.126670877Z }
+2023-09-26T21:00:44.287234574Z ===/send_input:end time: 2023-09-26 21:00:44.286780, total(seconds): 7.052934169769287, user:aarondev
+2023-09-26T21:00:44.289370478Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:00:49.498394629Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:06:15.740585554Z ===/send_input:usage_fraction: 2023-09-26 21:06:15.730507 Azure::rhgpt4 0.25267125 aarondev c99d3932-0736-48db-99b6-c24117296b5f they are too slow
+2023-09-26T21:06:15.812501546Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:06:15.812545846Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:06:15.812552846Z ===--------API start time: 2023-09-26 21:06:15.812299, Azure, rhgpt4
+2023-09-26T21:06:15.812557346Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:06:21.921933292Z ===------Assessor: API end time and response time(seconds): 6.109255075454712 endTimestamp:2023-09-26 21:06:21.921554 usage:{
+2023-09-26T21:06:21.921984992Z   "completion_tokens": 91,
+2023-09-26T21:06:21.921992292Z   "prompt_tokens": 324,
+2023-09-26T21:06:21.921996392Z   "total_tokens": 415
+2023-09-26T21:06:21.922000692Z }
+2023-09-26T21:06:21.922004592Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:06:21.922008692Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:06:21.922012992Z ===--------API start time: 2023-09-26 21:06:21.921836, Azure, rhgpt4
+2023-09-26T21:06:21.922017192Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:06:26.271201203Z ===------Therapist: API end time and response time(seconds): 4.3489830493927 endTimestamp:2023-09-26 21:06:26.270819 usage:{
+2023-09-26T21:06:26.271249103Z   "completion_tokens": 51,
+2023-09-26T21:06:26.271255803Z   "prompt_tokens": 430,
+2023-09-26T21:06:26.271260103Z   "total_tokens": 481
+2023-09-26T21:06:26.271264003Z }
+2023-09-26T21:06:26.420399359Z ===/send_input:end time: 2023-09-26 21:06:26.419843, total(seconds): 10.689336061477661, user:aarondev
+
+2023-09-26T21:08:05.106156411Z ===/get_transcript_by_id: ec5c8ed8-9349-4033-bd06-0abf82b34eb2
+
+2023-09-26T21:08:10.065800444Z ===/get_transcript_by_id: 8ddb0622-a509-4a24-9233-d54c856dd8f1
+
+2023-09-26T21:08:14.762331178Z ===/feedback:payload: {'transcript': {'id': '8ddb0622-a509-4a24-9233-d54c856dd8f1', 'username': 'aarondev', 'created_at': 'Tue, 26 Sep 2023 19:47:46 GMT', 'updated_at': 'Tue, 26 Sep 2023 20:46:20 GMT', 'dialog_title': 'I think Tesla will dominant EV market', 'dialog_content': [], 'transcript': "Version=3.2\nTokens Used: 2572\n\nParticipants:\n  Therapist:\n  - role: assistant\n  - system message: Engage in Socratic dialogue with the patient to help them evaluate and potentially change my thought until they believe it less than some threshold. Don't ask them to rate their belief strength/percentage at every exchange. Short Socratic questions are usually more helpful. Try not to give advice. If they get too frustrated, try another line of questions. Once their belief strength is low enough, ask what alternative belief would be a more realistic or helpful in regards to the experience. If there is no more movement in the dialogue, ask if they are ready to end the session. Do not respond to the [Supervisor] messages, only the patient's messages. Use the [Assessor] ratings to understand how much the belief is changing.\n  Supervisor:\n  - role: assistant\n  - system message: You are Socrates with the goal of improving the AI therapist's Socratic dialogue. Read the following transcript, and offer the Therapist concise advice on how to improve the Socratic dialogue. When giving advice, keep in mind that the Therapist is AI and does not have empathy or emotions.\n  Assessor:\n  - role: assistant\n  - system message: You are a Rater. Read the following interview and estimate the likely belief strength the patient provided and is working on. Respond in the form 'belief strength: XXX% and then provide an explanation for why you gave a specific rating.\n  Patient:\n  - role: user\n\nTherapist: Hello, I am Socrates 2.0, an AI language model here to engage in a Socratic dialogue with you. What belief would you like to explore and potentially change today?\n\nSupervisor: \n\nPatient: I think Tesla will dominant EV market\n\nAssessor: \n\nTherapist: I'm sorry, theres seems to have been an error in generating a response. Can you try asking again?\n\nSupervisor: \n\nPatient: I think Tesla will dominant EV market\n\nAssessor: Belief Strength: 100%\n\nExplanation: The patient has stated the same belief twice with the same level of confidence, indicating a strong likelihood they firmly believe in this statement. No additional detail revealed any uncertainty or doubt. Their persistence to express the same belief without further context indicates a strong belief strength.\n\nTherapist: I see, so you believe that Tesla will dominate the electric vehicle market. It would be helpful to understand your reasons for holding this belief. Could you tell me why you think Tesla will be able to dominate in this space?\n\nSupervisor: \n\nPatient: I read a lot of information about Tesla. It has many advantages to let followers are difficult to catch up\n\nAssessor: Belief strength: 90%\n\nThe patient's belief in Tesla's future dominance in the electric vehicle market is quite strong, evidenced by their repeated assertion of the belief and the fact that they have based it on extensive reading and understanding of Tesla's competitive advantages. They didn't express any doubts or uncertainties about this belief, suggesting a high level of conviction.\n\nTherapist: It sounds like you have done some research on this topic. Can you share some of the specific advantages you believe Tesla has that make it difficult for other companies to catch up?\n\nSupervisor: \n\nPatient: For example, it uses the least parts in car, its vision system is cost much less on auto driving\n\nAssessor: Belief strength: 90%\n\nThe patient appears to have a strong belief that Tesla will dominate the EV market. They base this belief on their own research and they can provide specific reasons as to why they hold this belief, such as Tesla's minimalist design approach and cost-efficient vision system. Their ability to articulate specific examples implies a strong belief in their stance.\n\nTherapist: Those indeed sound like significant advantages. However, I wonder if we might consider other factors as well. For instance, do you believe there are other companies that could potentially compete with Tesla in terms of reducing the number of car parts or developing cost-effective autonomous driving technologies?\n\nSupervisor: [Therapist, your dialogue is relatively well structured and you managed to engage the patient in a discussion about his belief. However, there are some points you could enhance to improve the Socratic dialogue. \n\n1. Clarification: When the patient provides information, try to dig deeper by asking clarifying questions. For instance, when the patient mentioned that Tesla uses the least parts in car and its vision system costs less, you could have asked what specific information he read that led him to this conclusion. \n\n2. Assumption Identification: Try to identify the underlying assumptions in the patient's belief. For example, the patient seems to assume that having fewer parts and a cheaper vision system are the only important factors in dominating the EV market. You could have questioned this assumption by asking why he believes these factors are most crucial or if there are other factors he thinks might be important.\n\n3. Evidence Request: While you did ask the patient to share the specific advantages he believes Tesla has, try to push further for the evidence behind these beliefs. Ask for the sources of his information or the data that supports his views.\n\n4. Perspective Shifting: You've done well in introducing the idea of potential competition for Tesla. However, you could also encourage the patient to consider other perspectives, such as potential challenges Tesla might face, or potential advantages other companies might have. \n\nRemember, the goal is to stimulate critical thinking in the patient and help him to examine his own beliefs thoroughly.]\n\n", 'status': 0, 'dialog_feedbacks': []}, 'dialog_feedbacks': [{'name': 'Therapist', 'dialogSeqNumber': 2, 'rating': 1}]}
+2023-09-26T21:08:16.057573533Z ===/feedback:payload: {'transcript': {'id': '8ddb0622-a509-4a24-9233-d54c856dd8f1', 'username': 'aarondev', 'created_at': 'Tue, 26 Sep 2023 19:47:46 GMT', 'updated_at': 'Tue, 26 Sep 2023 20:46:20 GMT', 'dialog_title': 'I think Tesla will dominant EV market', 'dialog_content': [], 'transcript': "Version=3.2\nTokens Used: 2572\n\nParticipants:\n  Therapist:\n  - role: assistant\n  - system message: Engage in Socratic dialogue with the patient to help them evaluate and potentially change my thought until they believe it less than some threshold. Don't ask them to rate their belief strength/percentage at every exchange. Short Socratic questions are usually more helpful. Try not to give advice. If they get too frustrated, try another line of questions. Once their belief strength is low enough, ask what alternative belief would be a more realistic or helpful in regards to the experience. If there is no more movement in the dialogue, ask if they are ready to end the session. Do not respond to the [Supervisor] messages, only the patient's messages. Use the [Assessor] ratings to understand how much the belief is changing.\n  Supervisor:\n  - role: assistant\n  - system message: You are Socrates with the goal of improving the AI therapist's Socratic dialogue. Read the following transcript, and offer the Therapist concise advice on how to improve the Socratic dialogue. When giving advice, keep in mind that the Therapist is AI and does not have empathy or emotions.\n  Assessor:\n  - role: assistant\n  - system message: You are a Rater. Read the following interview and estimate the likely belief strength the patient provided and is working on. Respond in the form 'belief strength: XXX% and then provide an explanation for why you gave a specific rating.\n  Patient:\n  - role: user\n\nTherapist: Hello, I am Socrates 2.0, an AI language model here to engage in a Socratic dialogue with you. What belief would you like to explore and potentially change today?\n\nSupervisor: \n\nPatient: I think Tesla will dominant EV market\n\nAssessor: \n\nTherapist: I'm sorry, theres seems to have been an error in generating a response. Can you try asking again?\n\nSupervisor: \n\nPatient: I think Tesla will dominant EV market\n\nAssessor: Belief Strength: 100%\n\nExplanation: The patient has stated the same belief twice with the same level of confidence, indicating a strong likelihood they firmly believe in this statement. No additional detail revealed any uncertainty or doubt. Their persistence to express the same belief without further context indicates a strong belief strength.\n\nTherapist: I see, so you believe that Tesla will dominate the electric vehicle market. It would be helpful to understand your reasons for holding this belief. Could you tell me why you think Tesla will be able to dominate in this space?\n\nSupervisor: \n\nPatient: I read a lot of information about Tesla. It has many advantages to let followers are difficult to catch up\n\nAssessor: Belief strength: 90%\n\nThe patient's belief in Tesla's future dominance in the electric vehicle market is quite strong, evidenced by their repeated assertion of the belief and the fact that they have based it on extensive reading and understanding of Tesla's competitive advantages. They didn't express any doubts or uncertainties about this belief, suggesting a high level of conviction.\n\nTherapist: It sounds like you have done some research on this topic. Can you share some of the specific advantages you believe Tesla has that make it difficult for other companies to catch up?\n\nSupervisor: \n\nPatient: For example, it uses the least parts in car, its vision system is cost much less on auto driving\n\nAssessor: Belief strength: 90%\n\nThe patient appears to have a strong belief that Tesla will dominate the EV market. They base this belief on their own research and they can provide specific reasons as to why they hold this belief, such as Tesla's minimalist design approach and cost-efficient vision system. Their ability to articulate specific examples implies a strong belief in their stance.\n\nTherapist: Those indeed sound like significant advantages. However, I wonder if we might consider other factors as well. For instance, do you believe there are other companies that could potentially compete with Tesla in terms of reducing the number of car parts or developing cost-effective autonomous driving technologies?\n\nSupervisor: [Therapist, your dialogue is relatively well structured and you managed to engage the patient in a discussion about his belief. However, there are some points you could enhance to improve the Socratic dialogue. \n\n1. Clarification: When the patient provides information, try to dig deeper by asking clarifying questions. For instance, when the patient mentioned that Tesla uses the least parts in car and its vision system costs less, you could have asked what specific information he read that led him to this conclusion. \n\n2. Assumption Identification: Try to identify the underlying assumptions in the patient's belief. For example, the patient seems to assume that having fewer parts and a cheaper vision system are the only important factors in dominating the EV market. You could have questioned this assumption by asking why he believes these factors are most crucial or if there are other factors he thinks might be important.\n\n3. Evidence Request: While you did ask the patient to share the specific advantages he believes Tesla has, try to push further for the evidence behind these beliefs. Ask for the sources of his information or the data that supports his views.\n\n4. Perspective Shifting: You've done well in introducing the idea of potential competition for Tesla. However, you could also encourage the patient to consider other perspectives, such as potential challenges Tesla might face, or potential advantages other companies might have. \n\nRemember, the goal is to stimulate critical thinking in the patient and help him to examine his own beliefs thoroughly.]\n\n", 'status': 0, 'dialog_feedbacks': []}, 'dialog_feedbacks': [{'name': 'Therapist', 'dialogSeqNumber': 2, 'rating': 1}, {'name': 'Therapist', 'dialogSeqNumber': 3, 'rating': -1}]}
+
+2023-09-26T21:09:52.109701201Z ===/feedback:payload: {'transcript': {'id': '8ddb0622-a509-4a24-9233-d54c856dd8f1', 'username': 'aarondev', 'created_at': 'Tue, 26 Sep 2023 19:47:46 GMT', 'updated_at': 'Tue, 26 Sep 2023 20:46:20 GMT', 'dialog_title': 'I think Tesla will dominant EV market', 'dialog_content': [], 'transcript': "Version=3.2\nTokens Used: 2572\n\nParticipants:\n  Therapist:\n  - role: assistant\n  - system message: Engage in Socratic dialogue with the patient to help them evaluate and potentially change my thought until they believe it less than some threshold. Don't ask them to rate their belief strength/percentage at every exchange. Short Socratic questions are usually more helpful. Try not to give advice. If they get too frustrated, try another line of questions. Once their belief strength is low enough, ask what alternative belief would be a more realistic or helpful in regards to the experience. If there is no more movement in the dialogue, ask if they are ready to end the session. Do not respond to the [Supervisor] messages, only the patient's messages. Use the [Assessor] ratings to understand how much the belief is changing.\n  Supervisor:\n  - role: assistant\n  - system message: You are Socrates with the goal of improving the AI therapist's Socratic dialogue. Read the following transcript, and offer the Therapist concise advice on how to improve the Socratic dialogue. When giving advice, keep in mind that the Therapist is AI and does not have empathy or emotions.\n  Assessor:\n  - role: assistant\n  - system message: You are a Rater. Read the following interview and estimate the likely belief strength the patient provided and is working on. Respond in the form 'belief strength: XXX% and then provide an explanation for why you gave a specific rating.\n  Patient:\n  - role: user\n\nTherapist: Hello, I am Socrates 2.0, an AI language model here to engage in a Socratic dialogue with you. What belief would you like to explore and potentially change today?\n\nSupervisor: \n\nPatient: I think Tesla will dominant EV market\n\nAssessor: \n\nTherapist: I'm sorry, theres seems to have been an error in generating a response. Can you try asking again?\n\nSupervisor: \n\nPatient: I think Tesla will dominant EV market\n\nAssessor: Belief Strength: 100%\n\nExplanation: The patient has stated the same belief twice with the same level of confidence, indicating a strong likelihood they firmly believe in this statement. No additional detail revealed any uncertainty or doubt. Their persistence to express the same belief without further context indicates a strong belief strength.\n\nTherapist: I see, so you believe that Tesla will dominate the electric vehicle market. It would be helpful to understand your reasons for holding this belief. Could you tell me why you think Tesla will be able to dominate in this space?\n\nSupervisor: \n\nPatient: I read a lot of information about Tesla. It has many advantages to let followers are difficult to catch up\n\nAssessor: Belief strength: 90%\n\nThe patient's belief in Tesla's future dominance in the electric vehicle market is quite strong, evidenced by their repeated assertion of the belief and the fact that they have based it on extensive reading and understanding of Tesla's competitive advantages. They didn't express any doubts or uncertainties about this belief, suggesting a high level of conviction.\n\nTherapist: It sounds like you have done some research on this topic. Can you share some of the specific advantages you believe Tesla has that make it difficult for other companies to catch up?\n\nSupervisor: \n\nPatient: For example, it uses the least parts in car, its vision system is cost much less on auto driving\n\nAssessor: Belief strength: 90%\n\nThe patient appears to have a strong belief that Tesla will dominate the EV market. They base this belief on their own research and they can provide specific reasons as to why they hold this belief, such as Tesla's minimalist design approach and cost-efficient vision system. Their ability to articulate specific examples implies a strong belief in their stance.\n\nTherapist: Those indeed sound like significant advantages. However, I wonder if we might consider other factors as well. For instance, do you believe there are other companies that could potentially compete with Tesla in terms of reducing the number of car parts or developing cost-effective autonomous driving technologies?\n\nSupervisor: [Therapist, your dialogue is relatively well structured and you managed to engage the patient in a discussion about his belief. However, there are some points you could enhance to improve the Socratic dialogue. \n\n1. Clarification: When the patient provides information, try to dig deeper by asking clarifying questions. For instance, when the patient mentioned that Tesla uses the least parts in car and its vision system costs less, you could have asked what specific information he read that led him to this conclusion. \n\n2. Assumption Identification: Try to identify the underlying assumptions in the patient's belief. For example, the patient seems to assume that having fewer parts and a cheaper vision system are the only important factors in dominating the EV market. You could have questioned this assumption by asking why he believes these factors are most crucial or if there are other factors he thinks might be important.\n\n3. Evidence Request: While you did ask the patient to share the specific advantages he believes Tesla has, try to push further for the evidence behind these beliefs. Ask for the sources of his information or the data that supports his views.\n\n4. Perspective Shifting: You've done well in introducing the idea of potential competition for Tesla. However, you could also encourage the patient to consider other perspectives, such as potential challenges Tesla might face, or potential advantages other companies might have. \n\nRemember, the goal is to stimulate critical thinking in the patient and help him to examine his own beliefs thoroughly.]\n\n", 'status': 0, 'dialog_feedbacks': []}, 'dialog_feedbacks': [{'name': 'Therapist', 'dialogSeqNumber': 2, 'rating': 1}, {'name': 'Therapist', 'dialogSeqNumber': 3, 'rating': -1}, {'name': 'Therapist', 'dialogSeqNumber': 4, 'rating': 1}]}
+2023-09-26T21:09:52.109794201Z ======/ Socrates home page is rendered.
+2023-09-26T21:09:52.372452139Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:09:59.863146849Z ===/accept_disclaimer:user: id: 5, username: test, hash: pbkdf2:sha256:260000$wsokdOSPBPt7CQpG$d03632e57dcbfc28b8a25b8badeb555d49ecccc2d90beaa4a528882c67dcf5b7
+2023-09-26T21:09:59.863196149Z ===/accept_disclaimer:success: test, True
+
+2023-09-26T21:10:06.251260002Z ===/new_chat:
+2023-09-26T21:10:06.251303103Z ======/ Socrates home page is rendered.
+2023-09-26T21:10:07.122387683Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:10:12.753479400Z ===/send_input:usage_fraction: 2023-09-26 21:10:12.743329 Azure::rhgpt4 0.023026 test 518b88fc-9143-48f3-a9c7-5e1e0995f054 I will always be lonely.
+2023-09-26T21:10:12.818513049Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:10:12.818557749Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:10:12.818564649Z ===--------API start time: 2023-09-26 21:10:12.818211, Azure, rhgpt4
+2023-09-26T21:10:12.818569949Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:10:16.845604491Z ===------Assessor: API end time and response time(seconds): 4.027036905288696 endTimestamp:2023-09-26 21:10:16.845248 usage:{
+2023-09-26T21:10:16.845675191Z   "completion_tokens": 90,
+2023-09-26T21:10:16.845682891Z   "prompt_tokens": 108,
+2023-09-26T21:10:16.845687191Z   "total_tokens": 198
+2023-09-26T21:10:16.845691191Z }
+2023-09-26T21:10:16.845700391Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:10:16.845705191Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:10:16.845709491Z ===--------API start time: 2023-09-26 21:10:16.845546, Azure, rhgpt4
+2023-09-26T21:10:16.845713291Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:10:19.115389007Z ===------Therapist: API end time and response time(seconds): 2.269381046295166 endTimestamp:2023-09-26 21:10:19.114927 usage:{
+2023-09-26T21:10:19.115438807Z   "completion_tokens": 28,
+2023-09-26T21:10:19.115446107Z   "prompt_tokens": 206,
+2023-09-26T21:10:19.115450307Z   "total_tokens": 234
+2023-09-26T21:10:19.115454307Z }
+2023-09-26T21:10:19.260935217Z ===/send_input:end time: 2023-09-26 21:10:19.260537, total(seconds): 6.517207860946655, user:test
+2023-09-26T21:10:19.747613685Z ===/accept_disclaimer:user: id: 5, username: test, hash: pbkdf2:sha256:260000$wsokdOSPBPt7CQpG$d03632e57dcbfc28b8a25b8badeb555d49ecccc2d90beaa4a528882c67dcf5b7
+2023-09-26T21:10:19.747657885Z ===/accept_disclaimer:success: Test, True
+2023-09-26T21:10:19.881799286Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:10:27.139780360Z ===/feedback:payload: {'transcript': {'id': '518b88fc-9143-48f3-a9c7-5e1e0995f054', 'userid': '', 'username': '', 'created_at': '', 'updated_at': '', 'dialog_title': '', 'dialog_content': [], 'transcript': '', 'status': 0, 'dialog_feedbacks': []}, 'dialog_feedbacks': [{'name': 'Therapist', 'dialogSeqNumber': 1, 'rating': 1}]}
+2023-09-26T21:10:27.139823960Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:10:27.778001311Z ===/accept_disclaimer:user: id: 5, username: test, hash: pbkdf2:sha256:260000$wsokdOSPBPt7CQpG$d03632e57dcbfc28b8a25b8badeb555d49ecccc2d90beaa4a528882c67dcf5b7
+2023-09-26T21:10:27.778044811Z ===/accept_disclaimer:success: test, True
+
+2023-09-26T21:10:34.555268546Z ===/new_chat:
+2023-09-26T21:10:34.555323946Z ===/send_input:usage_fraction: 2023-09-26 21:10:34.539878 Azure::rhgpt4 0.0231124 test 518b88fc-9143-48f3-a9c7-5e1e0995f054 I don't have any friends. 
+2023-09-26T21:10:34.616308617Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:10:34.616351817Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:10:34.616358317Z ===--------API start time: 2023-09-26 21:10:34.616081, Azure, rhgpt4
+2023-09-26T21:10:34.616362617Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:10:38.137103546Z ===------Assessor: API end time and response time(seconds): 3.520663022994995 endTimestamp:2023-09-26 21:10:38.136744 usage:{
+2023-09-26T21:10:38.137164646Z   "completion_tokens": 56,
+2023-09-26T21:10:38.137185346Z   "prompt_tokens": 150,
+2023-09-26T21:10:38.137191446Z   "total_tokens": 206
+2023-09-26T21:10:38.137195246Z }
+2023-09-26T21:10:38.137198746Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:10:38.137202346Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:10:38.137205946Z ===--------API start time: 2023-09-26 21:10:38.137017, Azure, rhgpt4
+2023-09-26T21:10:38.137209546Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:10:39.907316218Z ===------Therapist: API end time and response time(seconds): 1.7699918746948242 endTimestamp:2023-09-26 21:10:39.907009 usage:{
+2023-09-26T21:10:39.907365318Z   "completion_tokens": 37,
+2023-09-26T21:10:39.907378618Z   "prompt_tokens": 250,
+2023-09-26T21:10:39.907383318Z   "total_tokens": 287
+2023-09-26T21:10:39.907386818Z }
+2023-09-26T21:10:40.046223995Z ===/send_input:end time: 2023-09-26 21:10:40.045988, total(seconds): 5.506110191345215, user:test
+2023-09-26T21:10:40.060701503Z ===/send_input:usage_fraction: 2023-09-26 21:10:40.051060 Azure::rhgpt4 0.023211 Test 9eadd3ba-9aca-4c01-a7df-9c145aa4ce90 I am lonely
+2023-09-26T21:10:40.069632607Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:10:40.069659107Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:10:40.069665407Z ===--------API start time: 2023-09-26 21:10:40.069515, Azure, rhgpt4
+2023-09-26T21:10:40.069670107Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:10:42.616014607Z ===------Assessor: API end time and response time(seconds): 2.5461699962615967 endTimestamp:2023-09-26 21:10:42.615685 usage:{
+2023-09-26T21:10:42.616057807Z   "completion_tokens": 50,
+2023-09-26T21:10:42.616064807Z   "prompt_tokens": 106,
+2023-09-26T21:10:42.616069107Z   "total_tokens": 156
+2023-09-26T21:10:42.616072807Z }
+2023-09-26T21:10:42.616076507Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:10:42.616080607Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:10:42.616085007Z ===--------API start time: 2023-09-26 21:10:42.615895, Azure, rhgpt4
+2023-09-26T21:10:42.616089207Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:10:44.137823243Z ===------Therapist: API end time and response time(seconds): 1.5215630531311035 endTimestamp:2023-09-26 21:10:44.137458 usage:{
+2023-09-26T21:10:44.137870043Z   "completion_tokens": 29,
+2023-09-26T21:10:44.137876643Z   "prompt_tokens": 203,
+2023-09-26T21:10:44.137880943Z   "total_tokens": 232
+2023-09-26T21:10:44.137885143Z }
+2023-09-26T21:10:44.280517822Z ===/send_input:end time: 2023-09-26 21:10:44.280240, total(seconds): 4.229180097579956, user:Test
+2023-09-26T21:10:44.282865823Z ===/get_transcript_by_id: 45083f5c-1052-48d0-af6a-d58735263ef7
+
+2023-09-26T21:10:55.735172888Z ===/send_input:usage_fraction: 2023-09-26 21:10:55.664989 Azure::rhgpt4 0.0232886 Test 9eadd3ba-9aca-4c01-a7df-9c145aa4ce90 I have no friends
+2023-09-26T21:10:55.802663366Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:10:55.802707567Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:10:55.802716167Z ===--------API start time: 2023-09-26 21:10:55.802405, Azure, rhgpt4
+2023-09-26T21:10:55.802720167Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:10:58.201774835Z ===------Assessor: API end time and response time(seconds): 2.3989458084106445 endTimestamp:2023-09-26 21:10:58.201351 usage:{
+2023-09-26T21:10:58.201821535Z   "completion_tokens": 57,
+2023-09-26T21:10:58.201827835Z   "prompt_tokens": 146,
+2023-09-26T21:10:58.201833535Z   "total_tokens": 203
+2023-09-26T21:10:58.201839135Z }
+2023-09-26T21:10:58.201843335Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:10:58.201847535Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:10:58.201851535Z ===--------API start time: 2023-09-26 21:10:58.201651, Azure, rhgpt4
+2023-09-26T21:10:58.201855635Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:10:59.842289848Z ===------Therapist: API end time and response time(seconds): 1.6389429569244385 endTimestamp:2023-09-26 21:10:59.840594 usage:{
+2023-09-26T21:10:59.842341248Z   "completion_tokens": 31,
+2023-09-26T21:10:59.842348748Z   "prompt_tokens": 244,
+2023-09-26T21:10:59.842353548Z   "total_tokens": 275
+2023-09-26T21:10:59.842357848Z }
+2023-09-26T21:10:59.989647457Z ===/send_input:end time: 2023-09-26 21:10:59.989287, total(seconds): 4.324297904968262, user:Test
+2023-09-26T21:11:00.001452565Z ===/send_input:usage_fraction: 2023-09-26 21:10:59.991745 Azure::rhgpt4 0.0233842 test 45083f5c-1052-48d0-af6a-d58735263ef7 soemthing not make sense
+2023-09-26T21:11:00.011278273Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:11:00.011319473Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:11:00.011326473Z ===--------API start time: 2023-09-26 21:11:00.010956, Azure, rhgpt4
+2023-09-26T21:11:00.011330973Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:11:04.621849117Z ===------Assessor: API end time and response time(seconds): 4.610453844070435 endTimestamp:2023-09-26 21:11:04.621410 usage:{
+2023-09-26T21:11:04.621900017Z   "completion_tokens": 103,
+2023-09-26T21:11:04.621906917Z   "prompt_tokens": 474,
+2023-09-26T21:11:04.621933417Z   "total_tokens": 577
+2023-09-26T21:11:04.621937917Z }
+2023-09-26T21:11:04.621959217Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:11:04.621963217Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:11:04.621967117Z ===--------API start time: 2023-09-26 21:11:04.621764, Azure, rhgpt4
+2023-09-26T21:11:04.621972317Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:11:06.644668357Z ===------Therapist: API end time and response time(seconds): 2.0225701332092285 endTimestamp:2023-09-26 21:11:06.644334 usage:{
+2023-09-26T21:11:06.644711957Z   "completion_tokens": 42,
+2023-09-26T21:11:06.644717657Z   "prompt_tokens": 581,
+2023-09-26T21:11:06.644721457Z   "total_tokens": 623
+2023-09-26T21:11:06.644725057Z }
+2023-09-26T21:11:06.782869494Z ===/send_input:end time: 2023-09-26 21:11:06.782572, total(seconds): 6.790827035903931, user:test
+2023-09-26T21:11:06.793876621Z ===/send_input:usage_fraction: 2023-09-26 21:11:06.784764 Azure::rhgpt4 0.0236242 test 518b88fc-9143-48f3-a9c7-5e1e0995f054 Maybe people just don't like me.
+2023-09-26T21:11:06.802826843Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:11:06.802850143Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:11:06.802856043Z ===--------API start time: 2023-09-26 21:11:06.802621, Azure, rhgpt4
+2023-09-26T21:11:06.802859943Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:11:26.840681614Z !!!!!![AIParticipant:az-gpt] RateLimitError: Retrying in 20.0 seconds. Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2023-07-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 6 seconds. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit.
+2023-09-26T21:11:26.840737414Z ===--------API start time: 2023-09-26 21:11:26.840351, Azure, rhgpt4
+2023-09-26T21:11:26.840744214Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:11:32.645147783Z ===------Assessor: API end time and response time(seconds): 5.804538011550903 endTimestamp:2023-09-26 21:11:32.644889 usage:{
+2023-09-26T21:11:32.645428984Z   "completion_tokens": 86,
+2023-09-26T21:11:32.645446285Z   "prompt_tokens": 201,
+2023-09-26T21:11:32.645451685Z   "total_tokens": 287
+2023-09-26T21:11:32.645455685Z }
+2023-09-26T21:11:32.645464185Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:11:32.645468685Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:11:32.645472685Z ===--------API start time: 2023-09-26 21:11:32.645123, Azure, rhgpt4
+2023-09-26T21:11:32.645476685Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:11:34.088004491Z ===------Therapist: API end time and response time(seconds): 1.4425139427185059 endTimestamp:2023-09-26 21:11:34.087637 usage:{
+2023-09-26T21:11:34.088085591Z   "completion_tokens": 28,
+2023-09-26T21:11:34.088092991Z   "prompt_tokens": 303,
+2023-09-26T21:11:34.088097391Z   "total_tokens": 331
+2023-09-26T21:11:34.088101391Z }
+2023-09-26T21:11:34.228520146Z ===/send_input:end time: 2023-09-26 21:11:34.228139, total(seconds): 27.44337487220764, user:test
+2023-09-26T21:11:34.240694668Z ===/send_input:usage_fraction: 2023-09-26 21:11:34.230560 Azure::rhgpt4 0.0237478 Test 9eadd3ba-9aca-4c01-a7df-9c145aa4ce90 People I can count on. 
+2023-09-26T21:11:34.250494986Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:11:34.250530886Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:11:34.250536886Z ===--------API start time: 2023-09-26 21:11:34.250231, Azure, rhgpt4
+2023-09-26T21:11:34.250540986Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:11:54.285646113Z !!!!!![AIParticipant:az-gpt] RateLimitError: Retrying in 20.0 seconds. Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2023-07-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 1 second. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit.
+2023-09-26T21:11:54.285699213Z ===--------API start time: 2023-09-26 21:11:54.285272, Azure, rhgpt4
+2023-09-26T21:11:54.285705713Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:11:58.572177487Z ===------Assessor: API end time and response time(seconds): 4.286644220352173 endTimestamp:2023-09-26 21:11:58.571916 usage:{
+2023-09-26T21:11:58.572239288Z   "completion_tokens": 74,
+2023-09-26T21:11:58.572246988Z   "prompt_tokens": 190,
+2023-09-26T21:11:58.572251188Z   "total_tokens": 264
+2023-09-26T21:11:58.572255488Z }
+2023-09-26T21:11:58.572319688Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:11:58.572345488Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:11:58.572352588Z ===--------API start time: 2023-09-26 21:11:58.572147, Azure, rhgpt4
+2023-09-26T21:11:58.572357488Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:12:00.451380250Z ===------Therapist: API end time and response time(seconds): 1.8788490295410156 endTimestamp:2023-09-26 21:12:00.450996 usage:{
+2023-09-26T21:12:00.451431051Z   "completion_tokens": 37,
+2023-09-26T21:12:00.451437951Z   "prompt_tokens": 290,
+2023-09-26T21:12:00.451442251Z   "total_tokens": 327
+2023-09-26T21:12:00.451446151Z }
+2023-09-26T21:12:00.589085383Z ===/send_input:end time: 2023-09-26 21:12:00.588763, total(seconds): 26.358202934265137, user:Test
+
+2023-09-26T21:12:08.854024314Z ===/send_input:usage_fraction: 2023-09-26 21:12:08.843531 Azure::rhgpt4 0.023866 test 518b88fc-9143-48f3-a9c7-5e1e0995f054 People bullied me when I was in school.
+2023-09-26T21:12:08.919796768Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:12:08.919873968Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:12:08.919888268Z ===--------API start time: 2023-09-26 21:12:08.919585, Azure, rhgpt4
+2023-09-26T21:12:08.919893368Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:12:13.136441551Z ===------Assessor: API end time and response time(seconds): 4.216169118881226 endTimestamp:2023-09-26 21:12:13.135754 usage:{
+2023-09-26T21:12:13.136485551Z   "completion_tokens": 88,
+2023-09-26T21:12:13.136492552Z   "prompt_tokens": 244,
+2023-09-26T21:12:13.136496752Z   "total_tokens": 332
+2023-09-26T21:12:13.136500952Z }
+2023-09-26T21:12:13.136504752Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:12:13.136509152Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:12:13.136513652Z ===--------API start time: 2023-09-26 21:12:13.135992, Azure, rhgpt4
+2023-09-26T21:12:13.136517752Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:12:15.626076656Z ===------Therapist: API end time and response time(seconds): 2.489457845687866 endTimestamp:2023-09-26 21:12:15.625450 usage:{
+2023-09-26T21:12:15.626125856Z   "completion_tokens": 44,
+2023-09-26T21:12:15.626133056Z   "prompt_tokens": 348,
+2023-09-26T21:12:15.626137756Z   "total_tokens": 392
+2023-09-26T21:12:15.626142056Z }
+2023-09-26T21:12:15.626146356Z ==::=AIParticipant(Participant)._get_api_response():1.role: Supervisor Azure::rhgpt4
+2023-09-26T21:12:15.626151056Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:12:15.626155156Z ===--------API start time: 2023-09-26 21:12:15.625741, Azure, rhgpt4
+2023-09-26T21:12:15.626158956Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:12:27.566360984Z ===------Supervisor: API end time and response time(seconds): 11.940260887145996 endTimestamp:2023-09-26 21:12:27.566002 usage:{
+2023-09-26T21:12:27.566416784Z   "completion_tokens": 237,
+2023-09-26T21:12:27.566449884Z   "prompt_tokens": 304,
+2023-09-26T21:12:27.566454284Z   "total_tokens": 541
+2023-09-26T21:12:27.566458984Z }
+
+2023-09-26T21:12:27.721966183Z ===/send_input:end time: 2023-09-26 21:12:27.721589, total(seconds): 18.878058195114136, user:test
+2023-09-26T21:12:27.724095492Z ======/ Socrates home page is rendered.
+2023-09-26T21:12:27.731111919Z ======/ Socrates home page is rendered.
+2023-09-26T21:12:27.732691925Z ======/ Socrates home page is rendered.
+2023-09-26T21:12:27.734575532Z ======/ Socrates home page is rendered.
+2023-09-26T21:12:31.683941436Z ===/accept_disclaimer:user: id: 1, username: aarondev, hash: pbkdf2:sha256:600000$ty2pfX9tShEHKPE7$6d69c5a781b51c52f1e88176ffe39c617a1d35f5247b3f2d0a0a1369a74924db
+2023-09-26T21:12:31.684007637Z ===/accept_disclaimer:success: aarondev, True
+
+2023-09-26T21:12:38.496881512Z ===/get_transcript_by_id: 2ecc80cc-fc03-4b00-a927-371a0c25eb9b
+2023-09-26T21:12:39.699354429Z ===/accept_disclaimer:user: id: 9, username: rhp, hash: pbkdf2:sha256:600000$RoWHAMAqPlXDoQC8$283738830ade12a95f9e5529447ba84fe2007de7af5375753ae43a4939a8d3ba
+2023-09-26T21:12:39.699405229Z ===/accept_disclaimer:success: Rhp, True
+
+2023-09-26T21:12:43.256071364Z ===/send_input:usage_fraction: 2023-09-26 21:12:43.246014 Azure::rhgpt4 0.25379125 aarondev 2ecc80cc-fc03-4b00-a927-371a0c25eb9b it
+2023-09-26T21:12:43.360654909Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:12:43.360698609Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:12:43.360704309Z ===--------API start time: 2023-09-26 21:12:43.360352, Azure, rhgpt4
+2023-09-26T21:12:43.360708109Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:12:50.798067091Z ===------Assessor: API end time and response time(seconds): 7.437222003936768 endTimestamp:2023-09-26 21:12:50.797574 usage:{
+2023-09-26T21:12:50.798121091Z   "completion_tokens": 144,
+2023-09-26T21:12:50.798128191Z   "prompt_tokens": 599,
+2023-09-26T21:12:50.798132691Z   "total_tokens": 743
+2023-09-26T21:12:50.798136591Z }
+2023-09-26T21:12:50.798140991Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:12:50.798145591Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:12:50.798149591Z ===--------API start time: 2023-09-26 21:12:50.797882, Azure, rhgpt4
+2023-09-26T21:12:50.798153491Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:12:52.206765698Z ===------Therapist: API end time and response time(seconds): 1.4086189270019531 endTimestamp:2023-09-26 21:12:52.206501 usage:{
+2023-09-26T21:12:52.206813898Z   "completion_tokens": 22,
+2023-09-26T21:12:52.206821498Z   "prompt_tokens": 706,
+2023-09-26T21:12:52.206825698Z   "total_tokens": 728
+2023-09-26T21:12:52.206829698Z }
+2023-09-26T21:12:52.206843898Z ==::=AIParticipant(Participant)._get_api_response():1.role: Supervisor Azure::rhgpt4
+2023-09-26T21:12:52.206848998Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:12:52.206853798Z ===--------API start time: 2023-09-26 21:12:52.206754, Azure, rhgpt4
+2023-09-26T21:12:52.206858698Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:13:08.167006982Z ===------Supervisor: API end time and response time(seconds): 15.959924936294556 endTimestamp:2023-09-26 21:13:08.166679 usage:{
+2023-09-26T21:13:08.167089782Z   "completion_tokens": 272,
+2023-09-26T21:13:08.167096983Z   "prompt_tokens": 637,
+2023-09-26T21:13:08.167100883Z   "total_tokens": 909
+2023-09-26T21:13:08.167104583Z }
+2023-09-26T21:13:08.322245418Z ===/send_input:end time: 2023-09-26 21:13:08.321808, total(seconds): 25.075793981552124, user:aarondev
+2023-09-26T21:13:08.453380070Z ===/new_chat:
+2023-09-26T21:13:08.453417170Z ===/send_input:usage_fraction: 2023-09-26 21:13:08.443629 Azure::rhgpt4 0.0 Rhp  I am lonely
+2023-09-26T21:13:08.515939286Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:13:08.515988186Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:13:08.515995286Z ===--------API start time: 2023-09-26 21:13:08.515678, Azure, rhgpt4
+2023-09-26T21:13:08.516000886Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:13:12.142476771Z ===------Assessor: API end time and response time(seconds): 3.6264641284942627 endTimestamp:2023-09-26 21:13:12.142142 usage:{
+2023-09-26T21:13:12.142509671Z   "completion_tokens": 46,
+2023-09-26T21:13:12.142516371Z   "prompt_tokens": 64,
+2023-09-26T21:13:12.142520471Z   "total_tokens": 110
+2023-09-26T21:13:12.142524271Z }
+2023-09-26T21:13:12.142528571Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:13:12.142533071Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:13:12.142537071Z ===--------API start time: 2023-09-26 21:13:12.142389, Azure, rhgpt4
+2023-09-26T21:13:12.142540971Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:13:14.713677521Z ===------Therapist: API end time and response time(seconds): 2.570909023284912 endTimestamp:2023-09-26 21:13:14.713298 usage:{
+2023-09-26T21:13:14.713727621Z   "completion_tokens": 24,
+2023-09-26T21:13:14.713734221Z   "prompt_tokens": 161,
+2023-09-26T21:13:14.713738221Z   "total_tokens": 185
+2023-09-26T21:13:14.713742221Z }
+2023-09-26T21:13:14.899938762Z ===/send_input:end time: 2023-09-26 21:13:14.899632, total(seconds): 6.456002950668335, user:Rhp
+2023-09-26T21:13:14.917933524Z ===/send_input:usage_fraction: 2023-09-26 21:13:14.902107 Azure::rhgpt4 0.024119 test 518b88fc-9143-48f3-a9c7-5e1e0995f054 For some people maybe. I am afraid people will hurt me so I try not to get closel
+2023-09-26T21:13:14.934690782Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:13:14.934724882Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:13:14.934731282Z ===--------API start time: 2023-09-26 21:13:14.934489, Azure, rhgpt4
+2023-09-26T21:13:14.934736482Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:13:19.074568163Z ===------Assessor: API end time and response time(seconds): 4.13976788520813 endTimestamp:2023-09-26 21:13:19.074257 usage:{
+2023-09-26T21:13:19.074631264Z   "completion_tokens": 94,
+2023-09-26T21:13:19.074637764Z   "prompt_tokens": 315,
+2023-09-26T21:13:19.074641464Z   "total_tokens": 409
+2023-09-26T21:13:19.074644964Z }
+2023-09-26T21:13:19.074656564Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:13:19.074660664Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:13:19.074664164Z ===--------API start time: 2023-09-26 21:13:19.074531, Azure, rhgpt4
+2023-09-26T21:13:19.074667664Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:13:20.958303124Z ===------Therapist: API end time and response time(seconds): 1.8834760189056396 endTimestamp:2023-09-26 21:13:20.958007 usage:{
+2023-09-26T21:13:20.958360424Z   "completion_tokens": 36,
+2023-09-26T21:13:20.958367824Z   "prompt_tokens": 420,
+2023-09-26T21:13:20.958373324Z   "total_tokens": 456
+2023-09-26T21:13:20.958378824Z }
+2023-09-26T21:13:21.099924880Z ===/send_input:end time: 2023-09-26 21:13:21.099466, total(seconds): 6.197359085083008, user:test
+2023-09-26T21:13:21.111712717Z ===/send_input:usage_fraction: 2023-09-26 21:13:21.102130 Azure::rhgpt4 0.25676625 aarondev 2ecc80cc-fc03-4b00-a927-371a0c25eb9b it becomes better
+2023-09-26T21:13:21.121690750Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:13:21.121731050Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:13:21.121737450Z ===--------API start time: 2023-09-26 21:13:21.121415, Azure, rhgpt4
+2023-09-26T21:13:21.121741750Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:13:29.929024579Z ===------Therapist: API end time and response time(seconds): 2.2833638191223145 endTimestamp:2023-09-26 21:13:29.928784 usage:{
+2023-09-26T21:13:29.929070679Z   "completion_tokens": 38,
+2023-09-26T21:13:29.929078179Z   "prompt_tokens": 739,
+2023-09-26T21:13:29.929082479Z   "total_tokens": 777
+2023-09-26T21:13:29.929101479Z }
+2023-09-26T21:13:30.094491164Z ===/send_input:end time: 2023-09-26 21:13:30.094160, total(seconds): 8.992030143737793, user:aarondev
+2023-09-26T21:13:30.106214498Z ===/send_input:usage_fraction: 2023-09-26 21:13:30.096609 Azure::rhgpt4 5.9e-05 Rhp a7e5aed8-08f8-4555-a07f-1115ad3348ba I don’t have any friends
+2023-09-26T21:13:30.115506425Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:13:30.115546225Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:13:30.115553425Z ===--------API start time: 2023-09-26 21:13:30.115229, Azure, rhgpt4
+2023-09-26T21:13:30.115557725Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:13:33.425714733Z ===------Assessor: API end time and response time(seconds): 3.3101601600646973 endTimestamp:2023-09-26 21:13:33.425389 usage:{
+2023-09-26T21:13:33.425840133Z   "completion_tokens": 56,
+2023-09-26T21:13:33.426107734Z   "prompt_tokens": 109,
+2023-09-26T21:13:33.426125734Z   "total_tokens": 165
+2023-09-26T21:13:33.426131034Z }
+2023-09-26T21:13:33.426138634Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:13:33.426143234Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:13:33.426147434Z ===--------API start time: 2023-09-26 21:13:33.425618, Azure, rhgpt4
+2023-09-26T21:13:33.426151334Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:13:53.464069483Z !!!!!![AIParticipant:az-gpt] RateLimitError: Retrying in 20.0 seconds. Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2023-07-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 10 seconds. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit.
+2023-09-26T21:13:53.464118783Z ===--------API start time: 2023-09-26 21:13:53.463872, Azure, rhgpt4
+2023-09-26T21:13:53.464125683Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:13:54.891875975Z ===------Therapist: API end time and response time(seconds): 1.4276759624481201 endTimestamp:2023-09-26 21:13:54.891548 usage:{
+2023-09-26T21:13:54.891910975Z   "completion_tokens": 26,
+2023-09-26T21:13:54.891917575Z   "prompt_tokens": 206,
+2023-09-26T21:13:54.891921775Z   "total_tokens": 232
+2023-09-26T21:13:54.891925875Z }
+2023-09-26T21:13:55.030960413Z ===/send_input:end time: 2023-09-26 21:13:55.030639, total(seconds): 24.934029817581177, user:Rhp
+2023-09-26T21:13:55.042845450Z ===/send_input:usage_fraction: 2023-09-26 21:13:55.033206 Azure::rhgpt4 0.024292 test 518b88fc-9143-48f3-a9c7-5e1e0995f054 I do. 
+2023-09-26T21:13:55.055242989Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:13:55.055284989Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:13:55.055309489Z ===--------API start time: 2023-09-26 21:13:55.054874, Azure, rhgpt4
+2023-09-26T21:13:55.055314589Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:14:00.978010298Z ===------Assessor: API end time and response time(seconds): 5.922745943069458 endTimestamp:2023-09-26 21:14:00.977620 usage:{
+2023-09-26T21:14:00.978058298Z   "completion_tokens": 99,
+2023-09-26T21:14:00.978074198Z   "prompt_tokens": 361,
+2023-09-26T21:14:00.978079498Z   "total_tokens": 460
+2023-09-26T21:14:00.978084198Z }
+2023-09-26T21:14:00.978088198Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:14:00.978092798Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:14:00.978096798Z ===--------API start time: 2023-09-26 21:14:00.977873, Azure, rhgpt4
+2023-09-26T21:14:00.978100798Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:14:02.862404541Z ===------Therapist: API end time and response time(seconds): 1.8841748237609863 endTimestamp:2023-09-26 21:14:02.862048 usage:{
+2023-09-26T21:14:02.862480242Z   "completion_tokens": 27,
+2023-09-26T21:14:02.862488142Z   "prompt_tokens": 468,
+2023-09-26T21:14:02.862492442Z   "total_tokens": 495
+2023-09-26T21:14:02.862496442Z }
+2023-09-26T21:14:03.002734432Z ===/send_input:end time: 2023-09-26 21:14:03.002401, total(seconds): 7.969195127487183, user:test
+2023-09-26T21:14:03.014608465Z ===/send_input:usage_fraction: 2023-09-26 21:14:03.004657 Azure::rhgpt4 0.024483 test 518b88fc-9143-48f3-a9c7-5e1e0995f054 People only care about themselves.
+2023-09-26T21:14:03.024682993Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:14:03.024727093Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:14:03.024733993Z ===--------API start time: 2023-09-26 21:14:03.024446, Azure, rhgpt4
+2023-09-26T21:14:03.024738393Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:14:23.070259703Z !!!!!![AIParticipant:az-gpt] RateLimitError: Retrying in 20.0 seconds. Requests to the ChatCompletions_Create Operation under Azure OpenAI API version 2023-07-01-preview have exceeded token rate limit of your current OpenAI S0 pricing tier. Please retry after 6 seconds. Please go here: https://aka.ms/oai/quotaincrease if you would like to further increase the default rate limit.
+2023-09-26T21:14:23.070309404Z ===--------API start time: 2023-09-26 21:14:23.069964, Azure, rhgpt4
+2023-09-26T21:14:23.070316204Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:14:33.652143036Z ===------Assessor: API end time and response time(seconds): 10.581887006759644 endTimestamp:2023-09-26 21:14:33.651851 usage:{
+2023-09-26T21:14:33.652193336Z   "completion_tokens": 92,
+2023-09-26T21:14:33.652199636Z   "prompt_tokens": 400,
+2023-09-26T21:14:33.652203536Z   "total_tokens": 492
+2023-09-26T21:14:33.652222036Z }
+2023-09-26T21:14:33.652249036Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:14:33.652253636Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:14:33.652257536Z ===--------API start time: 2023-09-26 21:14:33.652084, Azure, rhgpt4
+2023-09-26T21:14:33.652261536Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:14:35.298126835Z ===------Therapist: API end time and response time(seconds): 1.645723819732666 endTimestamp:2023-09-26 21:14:35.297808 usage:{
+2023-09-26T21:14:35.298178735Z   "completion_tokens": 34,
+2023-09-26T21:14:35.298185635Z   "prompt_tokens": 509,
+2023-09-26T21:14:35.298230635Z   "total_tokens": 543
+2023-09-26T21:14:35.298245335Z }
+2023-09-26T21:14:35.446496285Z ===/send_input:end time: 2023-09-26 21:14:35.446211, total(seconds): 32.44155406951904, user:test
+
+2023-09-26T21:14:38.425369431Z ===/send_input:usage_fraction: 2023-09-26 21:14:38.415249 Azure::rhgpt4 0.0001384 Rhp a7e5aed8-08f8-4555-a07f-1115ad3348ba I just don’t have any. No one likes me.
+2023-09-26T21:14:38.490361309Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:14:38.490400509Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:14:38.490406609Z ===--------API start time: 2023-09-26 21:14:38.490115, Azure, rhgpt4
+2023-09-26T21:14:38.490410609Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:14:41.503289936Z ===------Assessor: API end time and response time(seconds): 3.0128180980682373 endTimestamp:2023-09-26 21:14:41.502933 usage:{
+2023-09-26T21:14:41.503343737Z   "completion_tokens": 78,
+2023-09-26T21:14:41.503350637Z   "prompt_tokens": 153,
+2023-09-26T21:14:41.503356037Z   "total_tokens": 231
+2023-09-26T21:14:41.503360937Z }
+2023-09-26T21:14:41.503365137Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:14:41.503369437Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:14:41.503373737Z ===--------API start time: 2023-09-26 21:14:41.503218, Azure, rhgpt4
+2023-09-26T21:14:41.503377637Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:14:43.205452285Z ===------Therapist: API end time and response time(seconds): 1.7018749713897705 endTimestamp:2023-09-26 21:14:43.205093 usage:{
+2023-09-26T21:14:43.205497085Z   "completion_tokens": 26,
+2023-09-26T21:14:43.205503685Z   "prompt_tokens": 252,
+2023-09-26T21:14:43.205508085Z   "total_tokens": 278
+2023-09-26T21:14:43.205511885Z }
+2023-09-26T21:14:43.340633054Z ===/send_input:end time: 2023-09-26 21:14:43.340341, total(seconds): 4.925091981887817, user:Rhp
+
+2023-09-26T21:15:16.760270255Z ===/feedback:payload: {'transcript': {'id': '518b88fc-9143-48f3-a9c7-5e1e0995f054', 'userid': '', 'username': '', 'created_at': '', 'updated_at': '', 'dialog_title': '', 'dialog_content': [], 'transcript': '', 'status': 0, 'dialog_feedbacks': []}, 'dialog_feedbacks': [{'name': 'Therapist', 'dialogSeqNumber': 1, 'rating': 1}, {'name': 'Therapist', 'dialogSeqNumber': 7, 'rating': 1}]}
+2023-09-26T21:15:16.760329455Z ===/send_input:usage_fraction: 2023-09-26 21:15:16.750111 Azure::rhgpt4 0.02469 test 518b88fc-9143-48f3-a9c7-5e1e0995f054 Yes, I can see that.
+2023-09-26T21:15:16.834253052Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:15:16.834290352Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:15:16.834295952Z ===--------API start time: 2023-09-26 21:15:16.834005, Azure, rhgpt4
+2023-09-26T21:15:16.834299552Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:15:20.246831748Z ===------Assessor: API end time and response time(seconds): 3.4122958183288574 endTimestamp:2023-09-26 21:15:20.246301 usage:{
+2023-09-26T21:15:20.246887348Z   "completion_tokens": 84,
+2023-09-26T21:15:20.246902548Z   "prompt_tokens": 447,
+2023-09-26T21:15:20.246908648Z   "total_tokens": 531
+2023-09-26T21:15:20.246912848Z }
+2023-09-26T21:15:20.246916848Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:15:20.246921148Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:15:20.246925148Z ===--------API start time: 2023-09-26 21:15:20.246592, Azure, rhgpt4
+2023-09-26T21:15:20.246929248Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:15:21.942300592Z ===------Therapist: API end time and response time(seconds): 1.6952588558197021 endTimestamp:2023-09-26 21:15:21.941851 usage:{
+2023-09-26T21:15:21.942353192Z   "completion_tokens": 34,
+2023-09-26T21:15:21.942359792Z   "prompt_tokens": 558,
+2023-09-26T21:15:21.942364392Z   "total_tokens": 592
+2023-09-26T21:15:21.942368292Z }
+2023-09-26T21:15:22.097964481Z ===/send_input:end time: 2023-09-26 21:15:22.097693, total(seconds): 5.34758186340332, user:test
+2023-09-26T21:15:22.100020485Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:15:55.188061396Z ===/accept_disclaimer:user: id: 9, username: rhp, hash: pbkdf2:sha256:600000$RoWHAMAqPlXDoQC8$283738830ade12a95f9e5529447ba84fe2007de7af5375753ae43a4939a8d3ba
+2023-09-26T21:15:55.188100096Z ===/accept_disclaimer:success: Rhp, True
+
+2023-09-26T21:16:04.599311411Z ===/new_chat:
+2023-09-26T21:16:04.599375611Z ===/send_input:usage_fraction: 2023-09-26 21:16:04.588962 Azure::rhgpt4 0.0002402 Rhp cac6880d-8232-4be9-a8f6-b5a0d12f6f92 I am lonely
+2023-09-26T21:16:04.655290185Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor Azure::rhgpt4
+2023-09-26T21:16:04.655342285Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:16:04.655368085Z ===--------API start time: 2023-09-26 21:16:04.655036, Azure, rhgpt4
+2023-09-26T21:16:04.655379885Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+2023-09-26T21:16:07.002199335Z ===------Assessor: API end time and response time(seconds): 2.3467910289764404 endTimestamp:2023-09-26 21:16:07.001827 usage:{
+2023-09-26T21:16:07.002250836Z   "completion_tokens": 56,
+2023-09-26T21:16:07.002257336Z   "prompt_tokens": 106,
+2023-09-26T21:16:07.002261536Z   "total_tokens": 162
+2023-09-26T21:16:07.002265536Z }
+2023-09-26T21:16:07.002269936Z ==::=AIParticipant(Participant)._get_api_response():1.role: Therapist Azure::rhgpt4
+2023-09-26T21:16:07.002274536Z ===gptmodel_instance:api_base: https://rhuseast2.openai.azure.com/ Azure rhgpt4
+2023-09-26T21:16:07.002279036Z ===--------API start time: 2023-09-26 21:16:07.002055, Azure, rhgpt4
+2023-09-26T21:16:07.002282936Z ===--------!!!---call Azure Gpt Api: Azure, rhgpt4
+
+2023-09-26T21:16:08.857180287Z ===------Therapist: API end time and response time(seconds): 1.8547930717468262 endTimestamp:2023-09-26 21:16:08.856848 usage:{
+2023-09-26T21:16:08.857231087Z   "completion_tokens": 25,
+2023-09-26T21:16:08.857237987Z   "prompt_tokens": 203,
+2023-09-26T21:16:08.857242187Z   "total_tokens": 228
+2023-09-26T21:16:08.857246187Z }
+2023-09-26T21:16:08.997051041Z ===/send_input:end time: 2023-09-26 21:16:08.996732, total(seconds): 4.4077699184417725, user:Rhp
+
+2023-09-26T21:17:21.337684647Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:17:28.933507893Z ===/accept_disclaimer:user: id: 9, username: rhp, hash: pbkdf2:sha256:600000$RoWHAMAqPlXDoQC8$283738830ade12a95f9e5529447ba84fe2007de7af5375753ae43a4939a8d3ba
+2023-09-26T21:17:28.933566293Z ===/accept_disclaimer:success: Rhp, True
+
+2023-09-26T21:17:38.380814664Z ===/new_chat:
+2023-09-26T21:17:38.380871665Z ===/send_input:usage_fraction: 2023-09-26 21:17:38.369482 OpenAi::gpt-4 0.0003182 Rhp 9bbd71e1-4f1f-467e-9594-1b3c79e2367d I am lonely
+2023-09-26T21:17:38.441867924Z [2023-09-26 21:17:38,435] ERROR in app: Exception on /send_input [POST]
+2023-09-26T21:17:38.441912024Z Traceback (most recent call last):
+2023-09-26T21:17:38.441918424Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 2463, in wsgi_app
+2023-09-26T21:17:38.441922924Z     response = self.full_dispatch_request()
+2023-09-26T21:17:38.441926924Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.441930924Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1760, in full_dispatch_request
+2023-09-26T21:17:38.441935224Z     rv = self.handle_user_exception(e)
+2023-09-26T21:17:38.441939224Z          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.441943424Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1758, in full_dispatch_request
+2023-09-26T21:17:38.441962624Z     rv = self.dispatch_request()
+2023-09-26T21:17:38.441967024Z          ^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.441970724Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1734, in dispatch_request
+2023-09-26T21:17:38.441974724Z     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+2023-09-26T21:17:38.441978624Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.441982424Z   File "/tmp/8dbbed320a0883d/app.py", line 356, in handle_send_input
+2023-09-26T21:17:38.441986324Z     responses = sd_room.handle_user_input(user_input, gpt_model) #send user input to chatgpt
+2023-09-26T21:17:38.441990224Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.441994124Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 478, in handle_user_input
+2023-09-26T21:17:38.441998924Z     allresponses = self._run_participants_from(patient, gpt_model)
+2023-09-26T21:17:38.442002824Z                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.442006624Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 407, in _run_participants_from
+2023-09-26T21:17:38.442010524Z     response = self._run_participant(participant, gpt_model, **kwargs)
+2023-09-26T21:17:38.442014324Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.442018025Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 388, in _run_participant
+2023-09-26T21:17:38.442022025Z     volume, response = participant.get_next_response(self.transcript, gpt_model, **kwargs)
+2023-09-26T21:17:38.442025825Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.442029725Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 306, in get_next_response
+2023-09-26T21:17:38.442035025Z     response, tokens = self._get_api_response(transcript_view, gpt_model)
+2023-09-26T21:17:38.442039025Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.442042825Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 106, in _get_api_response
+2023-09-26T21:17:38.442046725Z     gptmodel_instance = getOpenAiGptInstance()
+2023-09-26T21:17:38.442050425Z                         ^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.442054225Z   File "/tmp/8dbbed320a0883d/scripts/gpt_init_openai.py", line 32, in getOpenAiGptInstance
+2023-09-26T21:17:38.442058125Z     return OpenAiGptSingleton()
+2023-09-26T21:17:38.442061925Z            ^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.442065525Z   File "/tmp/8dbbed320a0883d/scripts/gpt_init_openai.py", line 11, in __new__
+2023-09-26T21:17:38.442069925Z     cls._instance.init()
+2023-09-26T21:17:38.442073725Z   File "/tmp/8dbbed320a0883d/scripts/gpt_init_openai.py", line 15, in init
+2023-09-26T21:17:38.442081625Z     keyVaultName = os.environ["KEY_VAULT_NAME"]
+2023-09-26T21:17:38.442085625Z                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+2023-09-26T21:17:38.442089425Z   File "<frozen os>", line 679, in __getitem__
+2023-09-26T21:17:38.442093825Z KeyError: 'KEY_VAULT_NAME'
+
+2023-09-26T21:18:11.170570325Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor OpenAi::gpt-4
+2023-09-26T21:18:11.170615425Z ======/ Socrates home page is rendered.
+
+2023-09-26T21:18:16.846818197Z ===/accept_disclaimer:user: id: 9, username: rhp, hash: pbkdf2:sha256:600000$RoWHAMAqPlXDoQC8$283738830ade12a95f9e5529447ba84fe2007de7af5375753ae43a4939a8d3ba
+2023-09-26T21:18:16.846889198Z ===/accept_disclaimer:success: Rhp, True
+
+2023-09-26T21:18:27.990641747Z ===/new_chat:
+2023-09-26T21:18:27.990690347Z ===/send_input:usage_fraction: 2023-09-26 21:18:27.980214 OpenAi::gpt-4 0.0249146 test 518b88fc-9143-48f3-a9c7-5e1e0995f054 I don't know. I don't get out much.
+2023-09-26T21:18:28.085061240Z [2023-09-26 21:18:28,083] ERROR in app: Exception on /send_input [POST]
+2023-09-26T21:18:28.085105340Z Traceback (most recent call last):
+2023-09-26T21:18:28.085112040Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 2463, in wsgi_app
+2023-09-26T21:18:28.085117440Z     response = self.full_dispatch_request()
+2023-09-26T21:18:28.085122340Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.085126740Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1760, in full_dispatch_request
+2023-09-26T21:18:28.085130940Z     rv = self.handle_user_exception(e)
+2023-09-26T21:18:28.085134940Z          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.085138840Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1758, in full_dispatch_request
+2023-09-26T21:18:28.085143140Z     rv = self.dispatch_request()
+2023-09-26T21:18:28.085147040Z          ^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.085150740Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1734, in dispatch_request
+2023-09-26T21:18:28.085154640Z     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+2023-09-26T21:18:28.085158640Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.085162640Z   File "/tmp/8dbbed320a0883d/app.py", line 356, in handle_send_input
+2023-09-26T21:18:28.085166740Z     responses = sd_room.handle_user_input(user_input, gpt_model) #send user input to chatgpt
+2023-09-26T21:18:28.085170540Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.085174340Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 478, in handle_user_input
+2023-09-26T21:18:28.085178240Z     allresponses = self._run_participants_from(patient, gpt_model)
+2023-09-26T21:18:28.085182440Z                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.085203740Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 407, in _run_participants_from
+2023-09-26T21:18:28.085208340Z     response = self._run_participant(participant, gpt_model, **kwargs)
+2023-09-26T21:18:28.085212040Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.085216140Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 388, in _run_participant
+2023-09-26T21:18:28.085219940Z     volume, response = participant.get_next_response(self.transcript, gpt_model, **kwargs)
+2023-09-26T21:18:28.085223940Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.085227640Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 306, in get_next_response
+2023-09-26T21:18:28.085232840Z     response, tokens = self._get_api_response(transcript_view, gpt_model)
+2023-09-26T21:18:28.085236740Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.085240440Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 107, in _get_api_response
+2023-09-26T21:18:28.085244340Z     openai_instance  = gptmodel_instance.get_openai_instance()
+2023-09-26T21:18:28.085248140Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.085251840Z   File "/tmp/8dbbed320a0883d/scripts/gpt_init_openai.py", line 29, in get_openai_instance
+2023-09-26T21:18:28.085255740Z     return self.openai
+2023-09-26T21:18:28.085259340Z            ^^^^^^^^^^^
+2023-09-26T21:18:28.085262940Z AttributeError: 'OpenAiGptSingleton' object has no attribute 'openai'
+2023-09-26T21:18:28.281214734Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor OpenAi::gpt-4
+2023-09-26T21:18:28.281266934Z ===/send_input:usage_fraction: 2023-09-26 21:18:28.270487 OpenAi::gpt-4 0.0003182 Rhp 23a9a5ea-f78d-48de-a7e3-32dd3e4b8780 I am lonely
+2023-09-26T21:18:28.342977395Z [2023-09-26 21:18:28,341] ERROR in app: Exception on /send_input [POST]
+2023-09-26T21:18:28.343006195Z Traceback (most recent call last):
+2023-09-26T21:18:28.343012595Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 2463, in wsgi_app
+2023-09-26T21:18:28.343017095Z     response = self.full_dispatch_request()
+2023-09-26T21:18:28.343021195Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.343025295Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1760, in full_dispatch_request
+2023-09-26T21:18:28.343029295Z     rv = self.handle_user_exception(e)
+2023-09-26T21:18:28.343033295Z          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.343036895Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1758, in full_dispatch_request
+2023-09-26T21:18:28.343040895Z     rv = self.dispatch_request()
+2023-09-26T21:18:28.343044595Z          ^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.343060095Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1734, in dispatch_request
+2023-09-26T21:18:28.343064895Z     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+2023-09-26T21:18:28.343068895Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.343072695Z   File "/tmp/8dbbed320a0883d/app.py", line 356, in handle_send_input
+2023-09-26T21:18:28.343076595Z     responses = sd_room.handle_user_input(user_input, gpt_model) #send user input to chatgpt
+2023-09-26T21:18:28.343080595Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.343084295Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 478, in handle_user_input
+2023-09-26T21:18:28.343088295Z     allresponses = self._run_participants_from(patient, gpt_model)
+2023-09-26T21:18:28.343092395Z                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.343096495Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 407, in _run_participants_from
+2023-09-26T21:18:28.343100495Z     response = self._run_participant(participant, gpt_model, **kwargs)
+2023-09-26T21:18:28.343104195Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.343107995Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 388, in _run_participant
+2023-09-26T21:18:28.343111995Z     volume, response = participant.get_next_response(self.transcript, gpt_model, **kwargs)
+2023-09-26T21:18:28.343116295Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.343120295Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 306, in get_next_response
+2023-09-26T21:18:28.343125695Z     response, tokens = self._get_api_response(transcript_view, gpt_model)
+2023-09-26T21:18:28.343129595Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.343133695Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 107, in _get_api_response
+2023-09-26T21:18:28.343137795Z     openai_instance  = gptmodel_instance.get_openai_instance()
+2023-09-26T21:18:28.343141695Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:28.343145395Z   File "/tmp/8dbbed320a0883d/scripts/gpt_init_openai.py", line 29, in get_openai_instance
+2023-09-26T21:18:28.343149395Z     return self.openai
+2023-09-26T21:18:28.343152995Z            ^^^^^^^^^^^
+2023-09-26T21:18:28.343156695Z AttributeError: 'OpenAiGptSingleton' object has no attribute 'openai'
+
+2023-09-26T21:18:44.717886089Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor OpenAi::gpt-4
+2023-09-26T21:18:44.717932089Z ===/send_input:usage_fraction: 2023-09-26 21:18:44.707777 OpenAi::gpt-3.5-turbo 0.0249146 test 518b88fc-9143-48f3-a9c7-5e1e0995f054 I don't know. I don't get out much.
+2023-09-26T21:18:44.815531097Z [2023-09-26 21:18:44,813] ERROR in app: Exception on /send_input [POST]
+2023-09-26T21:18:44.815588097Z Traceback (most recent call last):
+2023-09-26T21:18:44.815595297Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 2463, in wsgi_app
+2023-09-26T21:18:44.815600197Z     response = self.full_dispatch_request()
+2023-09-26T21:18:44.815604498Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:44.815608598Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1760, in full_dispatch_request
+2023-09-26T21:18:44.815612798Z     rv = self.handle_user_exception(e)
+2023-09-26T21:18:44.815616698Z          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:44.815620598Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1758, in full_dispatch_request
+2023-09-26T21:18:44.815624698Z     rv = self.dispatch_request()
+2023-09-26T21:18:44.815628398Z          ^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:44.815632098Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1734, in dispatch_request
+2023-09-26T21:18:44.815635998Z     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+2023-09-26T21:18:44.815639898Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:44.815643798Z   File "/tmp/8dbbed320a0883d/app.py", line 356, in handle_send_input
+2023-09-26T21:18:44.815647698Z     responses = sd_room.handle_user_input(user_input, gpt_model) #send user input to chatgpt
+2023-09-26T21:18:44.815651498Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:44.815655198Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 478, in handle_user_input
+2023-09-26T21:18:44.815659398Z     allresponses = self._run_participants_from(patient, gpt_model)
+2023-09-26T21:18:44.815664898Z                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:44.815668698Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 407, in _run_participants_from
+2023-09-26T21:18:44.815672498Z     response = self._run_participant(participant, gpt_model, **kwargs)
+2023-09-26T21:18:44.815676098Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:44.815679998Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 388, in _run_participant
+2023-09-26T21:18:44.815683898Z     volume, response = participant.get_next_response(self.transcript, gpt_model, **kwargs)
+2023-09-26T21:18:44.815687598Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:44.815691298Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 306, in get_next_response
+2023-09-26T21:18:44.815696498Z     response, tokens = self._get_api_response(transcript_view, gpt_model)
+2023-09-26T21:18:44.815700298Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:44.815721098Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 107, in _get_api_response
+2023-09-26T21:18:44.815725298Z     openai_instance  = gptmodel_instance.get_openai_instance()
+2023-09-26T21:18:44.815728998Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:18:44.815732798Z   File "/tmp/8dbbed320a0883d/scripts/gpt_init_openai.py", line 29, in get_openai_instance
+2023-09-26T21:18:44.815736698Z     return self.openai
+2023-09-26T21:18:44.815740298Z            ^^^^^^^^^^^
+2023-09-26T21:18:44.815743898Z AttributeError: 'OpenAiGptSingleton' object has no attribute 'openai'
+
+2023-09-26T21:19:44.553895523Z ==::=AIParticipant(Participant)._get_api_response():1.role: Assessor OpenAi::gpt-3.5-turbo
+2023-09-26T21:19:44.553936423Z ===/new_chat:
+2023-09-26T21:19:44.553942423Z ===/send_input:usage_fraction: 2023-09-26 21:19:44.543612 OpenAi::gpt-4 0.258695 aarondev 399c8419-4099-4728-8579-f746e3f43628 I believe tomorrow will be better
+2023-09-26T21:19:44.608628861Z [2023-09-26 21:19:44,607] ERROR in app: Exception on /send_input [POST]
+2023-09-26T21:19:44.608687761Z Traceback (most recent call last):
+2023-09-26T21:19:44.608693961Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 2463, in wsgi_app
+2023-09-26T21:19:44.608698261Z     response = self.full_dispatch_request()
+2023-09-26T21:19:44.608702761Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:19:44.608707961Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1760, in full_dispatch_request
+2023-09-26T21:19:44.608712361Z     rv = self.handle_user_exception(e)
+2023-09-26T21:19:44.608715961Z          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:19:44.608719661Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1758, in full_dispatch_request
+2023-09-26T21:19:44.608723561Z     rv = self.dispatch_request()
+2023-09-26T21:19:44.608727061Z          ^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:19:44.608730561Z   File "/tmp/8dbbed320a0883d/antenv/lib/python3.11/site-packages/flask/app.py", line 1734, in dispatch_request
+2023-09-26T21:19:44.608734261Z     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+2023-09-26T21:19:44.608737761Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:19:44.608741361Z   File "/tmp/8dbbed320a0883d/app.py", line 356, in handle_send_input
+2023-09-26T21:19:44.608745161Z     responses = sd_room.handle_user_input(user_input, gpt_model) #send user input to chatgpt
+2023-09-26T21:19:44.608748661Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:19:44.608752161Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 478, in handle_user_input
+2023-09-26T21:19:44.608755761Z     allresponses = self._run_participants_from(patient, gpt_model)
+2023-09-26T21:19:44.608774561Z                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:19:44.608778461Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 407, in _run_participants_from
+2023-09-26T21:19:44.608782061Z     response = self._run_participant(participant, gpt_model, **kwargs)
+2023-09-26T21:19:44.608785461Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:19:44.608788961Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 388, in _run_participant
+2023-09-26T21:19:44.608792462Z     volume, response = participant.get_next_response(self.transcript, gpt_model, **kwargs)
+2023-09-26T21:19:44.608795862Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:19:44.608799362Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 306, in get_next_response
+2023-09-26T21:19:44.608804162Z     response, tokens = self._get_api_response(transcript_view, gpt_model)
+2023-09-26T21:19:44.608807662Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:19:44.608811262Z   File "/tmp/8dbbed320a0883d/scripts/socratic_dialogue.py", line 107, in _get_api_response
+2023-09-26T21:19:44.608814762Z     openai_instance  = gptmodel_instance.get_openai_instance()
+2023-09-26T21:19:44.608818262Z                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-09-26T21:19:44.608821862Z   File "/tmp/8dbbed320a0883d/scripts/gpt_init_openai.py", line 29, in get_openai_instance
+2023-09-26T21:19:44.608825462Z     return self.openai
+2023-09-26T21:19:44.608829062Z            ^^^^^^^^^^^
+2023-09-26T21:19:44.608832462Z AttributeError: 'OpenAiGptSingleton' object has no attribute 'openai'

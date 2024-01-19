@@ -1,0 +1,203 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="socrates-container">
+        <div style="margin:15px; display: flex; align-items: center;">
+        <img src="{{ url_for('static', filename='icons/RushLogo.png') }}" 
+        style="margin-left: 10px; margin-bottom: 5px;" alt="RUSH Logo" class="rushlogo">
+        <h1 class="socrates-h1" style="margin-left: 50px; margin-bottom: 5px; margin-top: 1px;">Socrates Coach 1.0: AI-powered Socratic Dialogue for Clinicians</h1>
+    </div>
+        <label for="belief-names">Trauma Type:</label> 
+        <select name="belief-names" id="belief-names"> 
+            <option value="Random Belief">Random Trauma</option>
+            <option value="Natural Disasters">Natural Disasters</option> 
+            <option value="Sexual Trauma">Sexual Trauma</option> 
+            <option value="Military / Combat">Military / Combat</option> 
+            <option value="Childhood Sexual Trauma">Childhood Sexual Trauma</option> 
+            <option value="Medical Trauma">Medical Trauma</option> 
+        </select>
+        
+        <div id="prompts" style="min-width: 600px;">
+            <h5>Patient system message</h5>
+            <textarea id="therapist-text" rows="5"></textarea>
+            <h5>Supervisor system message</h5>
+            <textarea id="supervisor-text" rows="5"></textarea>
+        </div>
+        <div class="side-by-side-container">
+        <div class="side-by-side-left">
+            <div style="margin:10px; display: flex; align-items: center;">
+                <button id="new-chat" class="socrates-button" style="margin-left: 5px;">Start New Dialogue</button>
+                <SELECT name="transcriptList" id="transcriptList" style="margin-left: 5px;"></SELECT>
+                <i id="refreshIcon" class="refreshIcon"></i>
+                Select Previous Dialogue 
+            </div>
+            <div id="dialogpanel">
+
+                <div class="chat-container" style="display: none;">
+                    <div id="chat"></div>
+                    <div id="spinner" class="loader"></div>
+                </div>
+                <div style="text-align: left;">
+                    <!-- <b>**Please DO NOT enter any personal or sensitive information,<br> 
+                    such as, your name, birthdate, social security number, email, phone number, <br>
+                    medical record number, diagnosis/treatment/appointment details, etc</b> -->
+                </div>
+            <div class="user-input-container" style="display: none; align-items: stretch; ">
+                    <!-- <textarea id="user-input" placeholder="Respond to Socrates.&#10;**Please DO NOT enter any personal information, such as, your name, birthdate, social security number, email, phone number, medical record, etc" ></textarea> -->
+                    <textarea id="user-input" placeholder="Respond to Socrates. Please DO NOT enter any personal or sensitive information." ></textarea>
+                    <button id="send-response" class="socrates-button">Send</button>
+            </div>
+
+            </div>
+            <div class="input-menu-container" style="display: none;">
+                <div class="menu">
+                    <button id="report-issue" class="socrates-button">Report Problem</button>
+                    <button id="end-chat" class="socrates-button">End Dialogue</button>
+                    <button id="suggestion-button" class="socrates-button">Analyze</button>
+                    <SELECT id="gpt-models" style="margin-left: 5px;">
+                        <option value="Azure::rhgpt35turbo">Azure: gpt-35-turbo</option>
+                        <option value="Azure::rhgpt4">Azure: gpt-4</option>
+                        <!-- <option value="OpenAi::gpt-3.5-turbo">OpenAi: gpt-3.5-turbo</option>
+                        <option value="OpenAi::gpt-4">OpenAi: gpt-4</option> -->
+                    </SELECT>
+                </div>
+            </div>
+        </div>
+        <div class="side-by-side-right" id="crisis-warning" style="display: none;">
+            <div class="sco-text">Socrates is a generative AI tool and is not capable of handling crisis situations. 
+            Socrates may also not provide accurate crisis line information or other resources 
+            when requested.</div>
+            <div class="sco-text">If you or someone you know is struggling, in a mental health crisis, 
+                or having thoughts of suicide, call or text the 
+                <a href="https://988lifeline.org/" style="color: green">988 Suicide & Crisis Lifeline </a>
+                at <b>988</b> or chat at <a href="https://988lifeline.org/chat/" style="color: green">988lifeline.org</a>.
+                This service is confidential, free, and available 24 hours a day, 7 days a week. 
+                In life-threatening situations, call <b>911</b>.</div>
+        </div>
+        </div>
+
+    </div>
+    <div id="disclaimer" class="overlay">
+        <div class="overlay-content">
+            <div id="spinnerDisclaimer" class="loader"></div>
+            <h3 class="socrates-h1">
+                This version of Socrates is to be used as part of IRB-approved research
+            </h3>
+            <hr>
+            <p>
+                <span class="hili">Risks and Benefits</span>: While Socrates can provide valuable insights and help users explore 
+                their thoughts in a structured manner, it is not a substitute for professional mental health 
+                care or medical advice. Users should consult with a qualified professional before making any 
+                decisions based on the information provided by Socrates. Users should call 911 or go to the 
+                nearest emergency room in case of emergency.
+            </p>
+            <p>
+                <span class="hili">Data Storage and Processing</span>: Socrates utilizes the GPT (Generative Pre-trained Transformer) 
+                architecture, and the AI model processes and stores data to facilitate its responses. 
+                All data is stored securely, and we implement industry-standard practices to protect your privacy.
+            </p>
+            <p>
+                <span class="hili">De-identification and Privacy</span>: To maintain your privacy, please do not provide any personally 
+                identifiable information (PII) or personal health information (PHI), such as your name, birthdate, social security number, 
+                address, email, phone number, medical record number, or diagnosis/appointment/treatment details. The AI model is not designed 
+                to de-identify the data you provide, and sharing PII or PHI may expose you to potential privacy risks.
+            </p>
+            <p>
+                <span class="hili">No Guarantee of Accuracy</span>: Although Socrates is designed to generate helpful responses, the 
+                information provided by the AI tool may not always be accurate, complete, or appropriate for 
+                your specific situation. Users are advised to exercise discretion and critical thinking when 
+                evaluating the information generated by Socrates.
+            </p>
+            <p>
+                <span class="hili">Limitation of Liability</span>: By using Socrates, you agree to release and hold harmless the developers, 
+                owners, and operators of this AI tool from any and all liability, claims, damages, or expenses arising 
+                out of your use of the tool, including any consequences that may result from the reliance on the 
+                information provided by Socrates.
+            </p>
+            <p>
+                By proceeding to use Socrates, you confirm that you have read and understood this disclaimer, 
+                and you agree to its terms and conditions.
+            </p>
+            <label for="terms-checkbox">
+                <input type="checkbox" id="terms-checkbox">Please check this box to confirm that you have read, understand, and agree to  these Terms and Conditions.
+            </label>
+            <br><br>
+            <input type="text" length="80" id="username" placeholder="Username" disabled></input>
+            <input type="password" id="password" placeholder="Password" disabled></input>
+            <button id="disclaimer-accept" class="socrates-button" disabled>Login and Continue</button>
+            <p id="incorrect-login" class="hidden" style="color: red;">Incorrect email or password</p>
+        </div>
+    </div>
+    <div id="overlay-developer" class="overlay hidden">
+        <div class="overlay-content">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <input type="text" length="80" id="developer-password" placeholder="Enter developer password"></input>
+            <p id="incorrect-password" class="hidden" style="color: red;">Incorrect password</p>
+            <div id="developer-controls" class="hidden" style="min-width: 600px;">
+                <h5>Therapist system message</h5>
+                <textarea id="therapist-textarea" rows="5"></textarea>
+                <h5>Supervisor system message</h5>
+                <textarea id="supervisor-textarea" rows="5"></textarea>
+                <h5>Assessor system message</h5>
+                <textarea id="assessor-textarea" rows="5"></textarea>
+                <button id="submit-prompts">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div id="issue-content" class="overlay hidden">
+        <div class="overlay-content">
+            <span id="issue-close-btn" class="close-btn">&times;</span>
+            <h5>Describe the problem:</h5>
+            <textarea id="issue-textarea" rows="5"></textarea>
+            <button id="submit-issue">Submit</button>
+        </div>
+    </div>
+
+    <div id="suggestion-content" class="overlay hidden">
+        <div class="overlay-content">
+            <span id="issue-close-btns" class="close-btn">&times;</span>
+            <h3 id="suggest-head">Analyzing Socratic Dialog</h3>
+            <hr>
+            <p id="suggest-box"></p>
+            <p id="suggest-boxs">Please wait ... </p>
+        </div>
+    
+    </div>
+
+    <div id="overlay-survey" class="overlay hidden">
+        <div class="overlay-content">
+        <h2>Socrates Survey Form</h2>
+        <p>Thank you for taking the time to answer two brief questions about you exchange with Socrates. Your answers will help us improve Socrates in the future.</p>
+        <p>I am satisfied with the experience of the exchange:</p>
+          <input type="radio" id="eagree1" name="experienceGroup" value="1">
+          <label for="eagree1">Strongly Disagree</label><br>
+          <input type="radio" id="eagree2" name="experienceGroup" value="2">
+          <label for="eagree2">Slightly Disagree</label><br>
+          <input type="radio" id="eagree3" name="experienceGroup" value="3">
+          <label for="eagree3">Neither Agree Nor Disagree</label><br>
+          <input type="radio" id="eagree4" name="experienceGroup" value="4">
+          <label for="eagree4">Slightly Agree</label><br>
+          <input type="radio" id="eagree5" name="experienceGroup" value="5">
+          <label for="eagree5">Strongly Agree</label>
+        <br>  
+        <p>I found the exchange helpful:</p>
+          <input type="radio" id="hagree1" name="helpfulGroup" value="1">
+          <label for="hagree1">Strongly Disagree</label><br>
+          <input type="radio" id="hagree2" name="helpfulGroup" value="2">
+          <label for="hagree2">Slightly Disagree</label><br>  
+          <input type="radio" id="hagree3" name="helpfulGroup" value="3">
+          <label for="hagree3">Neither Agree Nor Disagree</label><br>
+          <input type="radio" id="hagree4" name="helpfulGroup" value="4">
+          <label for="hagree4">Slightly Agree</label><br>  
+          <input type="radio" id="hagree5" name="helpfulGroup" value="5">
+          <label for="hagree5">Strongly Agree</label>
+        <br>
+        <p>What feedback do you have about the exchange you just had with Socrates?</p>
+        <textarea id="survey-feedback-textarea" placeholder="" ></textarea>
+        <br><br>
+        <button id="submit-survey">Submit Survey</button> <button id="cancel-survey">Cancel</button>
+
+      </div>
+    </div>
+{% endblock %}

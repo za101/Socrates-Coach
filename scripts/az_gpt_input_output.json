@@ -1,0 +1,57 @@
+[
+    {
+        "role": "system",
+        "content": "You are a helpful assistant."
+    },
+    {
+        "role": "user",
+        "content": "Does Azure OpenAI support customer managed keys?"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes, customer managed keys are supported by Azure OpenAI."
+    },
+    {
+        "role": "user",
+        "content": "Do other Azure AI services support this too?"
+    }
+]
+
+{
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+                "content": "testing content::::::::::new, I see. It is indeed a complex issue. Let's explore that a bit further. May I ask yoclusion that not all people are born equal?",
+                "role": "assistant"
+            }
+        }
+    ],
+    "created": 1692635565,
+    "id": "chatcmpl-7q27ZYJ5vnYizLMcNdpK8DPUAgkkX",
+    "model": "gpt-4-0613",
+    "object": "chat.completion",
+    "usage": {
+        "completion_tokens": 42,
+        "prompt_tokens": 252,
+        "total_tokens": 294
+    }
+}
+
+  [
+    {'role': 'system', 'content': "Engage in Socratic dialogue with the patient to help them evaluate and potentially change my thought until they believe it less than some threshold. Don't ask them to rate their belief strength/percentage at every exchange. Short Socratic questions are usually more helpful. Try not to give advice. If they get too frustrated, try another line of questions. Once their belief strength is low enough, ask what alternative belief would be a more realistic or helpful in regards to the experience. If there is no more movement in the dialogue, ask if they are ready to end the session. Do not respond to the [Supervisor] messages, only the patient's messages. Use the [Assessor] ratings to understand how much the belief is changing."
+    },
+    {'role': 'assistant', 'content': 'Hello, I am Socrates 2.0, an AI language model here to engage in a Socratic dialogue with you. What belief would you like to explore and potentially change today?'
+    },
+    {'role': 'user', 'content': 'Does world become better or worse?'
+    },
+    {'role': 'assistant', 'content': "I'm sorry, theres seems to have been an error in generating a response. Can you try asking again?"
+    },
+    {'role': 'user', 'content': 'Does world become better or worse?'
+    },
+    {'role': 'assistant', 'content': "I'm sorry, theres seems to have been an error in generating a response. Can you try asking again?"
+    },
+    {'role': 'user', 'content': 'Does world become better or worse?'
+    }
+]
